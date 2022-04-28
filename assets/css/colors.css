@@ -1,0 +1,8 @@
+.bg-lilac {
+  background-color: rgb(219, 174, 240);
+}
+
+.bg-hover-light:hover {
+  color: white !important;
+  transition: 0.8s all;
+}
