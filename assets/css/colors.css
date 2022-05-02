@@ -6,3 +6,7 @@
   color: white !important;
   transition: 0.8s all;
 }
+
+.gradient {
+  background: linear-gradient(rgb(201, 157, 241), #fefefe);
+}
