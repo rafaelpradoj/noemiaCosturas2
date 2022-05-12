@@ -26,6 +26,11 @@
   transition: 0.2s all;
 }
 
+.bg-hover-purple:hover {
+  background-color: rgb(170, 104, 184) !important;
+  transition: 0.8s all;
+}
+
 .bg-hover-light:hover {
   background-color: white !important;
   transition: 0.8s all;
