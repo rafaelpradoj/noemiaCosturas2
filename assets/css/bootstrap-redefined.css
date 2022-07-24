@@ -1,0 +1,48 @@
+:root {
+  --lilac: rgb(219, 174, 240);
+  --power-lilac: rgb(170, 104, 184);
+  --degrade: linear-gradient(rgb(201, 157, 241), #fefefe);
+}
+
+/*Normal elements*/
+.principal,
+.mapa h2,
+.mapa p,
+.beneficios,
+.copywrite,
+.tabela-horarios {
+  cursor: default;
+}
+
+/*For Bootstrap Creations*/
+.bg-lilac {
+  background-color: var(--lilac);
+}
+
+.bg-hover-lilac:hover {
+  background-color: var(--lilac) !important;
+  transition: 0.2s all;
+}
+
+.bg-hover-purple:hover {
+  background-color: var(--power-lilac) !important;
+  transition: 0.8s all;
+}
+
+.bg-hover-light:hover {
+  background-color: white !important;
+  transition: 0.8s all;
+}
+
+.color-hover-light:hover {
+  color: white !important;
+  transition: 0.8s all;
+}
+
+.gradient {
+  background: var(--degrade);
+}
+
+.table-lilac {
+  background-color: var(--lilac);
+}

@@ -13,10 +13,10 @@
     <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
     <!--My CSS-->
     <link rel="stylesheet" href="assets/css/bootstrap-redefined.css" />
-    <title>Home | Noemia Costuras</title>
+    <title>Contato | Noemia Costuras</title>
   </head>
   <body>
-    <header class="bg-lilac">
+    <header class="bg-lilac border-bottom border-dark">
       <div class="container">
         <div
           class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start"
@@ -52,7 +52,6 @@
                 Home
               </a>
             </li>
-
             <li>
               <a
                 href="servicos.html"
@@ -73,7 +72,6 @@
                 Servicos
               </a>
             </li>
-
             <li>
               <a
                 href="contato.html"
@@ -99,108 +97,144 @@
       </div>
     </header>
     <main class="gradient">
-      <section class="carrossel border-top border-bottom border-dark">
-        <div
-          id="carouselExampleSlidesOnly"
-          class="carousel slide"
-          data-bs-ride="carousel"
-        >
-          <div class="carousel-inner">
-            <div class="carousel-item active">
-              <img
-                class="d-block w-100"
-                src="assets/img/banners/principal.jpg"
-                height="350"
-                alt="Carrossel Banner costurando roupa"
-              />
-            </div>
-            <div class="carousel-item">
-              <img
-                class="d-block w-100"
-                src="assets/img/banners/materiais.jpg"
-                height="350"
-                alt="Carrosel Banner materiais de costura"
-              />
-            </div>
-            <div class="carousel-item">
-              <img
-                class="d-block w-100"
-                src="assets/img/banners/utensilios.jpg"
-                height="350"
-                alt="Carrosel Banner materiais de costura"
-              />
-            </div>
-            <div class="carousel-item">
-              <img
-                class="d-block w-100"
-                src="assets/img/banners/atelie.jpg"
-                height="350"
-                alt="Carrosel Banner materiais de costura"
-              />
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section class="principal my-5 px-4">
+      <section class="formulario px-4 py-5">
         <div class="container">
-          <h1 class="text-center mb-4">Sobre a Noemia Costuras</h1>
+          <form class="row g-3">
+            <div class="campo-nome mb-3">
+              <label for="nome" class="form-label">
+                <h5>Nome e sobrenome</h5>
+              </label>
+              <input
+                type="text"
+                class="form-control shadow"
+                name="contact_name"
+                autocomplete="off"
+                autofocus
+                required
+              />
+            </div>
 
-          <p class="lead mb-4">
-            Localizada em Ferraz de Vasconcelos a
-            <strong>Noemia Costuras</strong> traz para a sociedade o que há de
-            melhor em preço e qualidade. Fundada em 2019, a Noemia Costuras já é
-            destaque nas periferias da cidade e conquista novos clientes a cada
-            dia.
-          </p>
+            <div class="campo-email col-md-6 mb-3">
+              <label for="email" class="form-label">
+                <h5>Email</h5>
+              </label>
+              <input
+                type="email"
+                class="form-control shadow"
+                name="contact_email"
+                autocomplete="off"
+                placeholder="email@dominio.com"
+                required
+              />
+            </div>
 
-          <p class="missao lead mb-3">
-            <strong>Missão:</strong> Nós realizamos sonhos através da
-            experiência de costura.
-          </p>
+            <div class="campo-telefone col-md-6 mb-3">
+              <label for="telefone" class="form-label" type="tel">
+                <h5>Telefone com DDD</h5>
+              </label>
+              <input
+                type="text"
+                class="form-control shadow"
+                id="phone-input"
+                name="contact_phone"
+                maxlength="15"
+                autocomplete="off"
+                required
+              />
+            </div>
 
-          <p class="visao lead mb-3">
-            <strong>Visão:</strong> Proporcionar um serviço de costura com
-            originalidade e ideias únicas.
-          </p>
-          <p class="valores lead">
-            <strong>Valores:</strong> Inovação, integridade, pontualidade e
-            qualidade.
-          </p>
+            <div class="campo-mensagem mb-3">
+              <label for="mensagem" class="form-label">
+                <h5>Mensagem</h5>
+              </label>
+              <textarea
+                class="form-control shadow"
+                name="contact_message"
+                rows="5"
+                maxlength="430"
+                required
+              ></textarea>
+            </div>
+
+            <fieldset class="campo-forma-contato mb-3">
+              <legend class="contato">
+                <h5>Como prefere o nosso contato?</h5>
+              </legend>
+              <div class="form-check mb-2">
+                <input
+                  type="radio"
+                  class="form-check-input"
+                  name="flexRadioDefault"
+                  id="telefone-radio"
+                  value="Telefone"
+                />
+                <label class="form-check-label" for="telefone-radio">
+                  Telefone
+                </label>
+              </div>
+
+              <div class="form-check">
+                <input
+                  type="radio"
+                  class="form-check-input"
+                  name="flexRadioDefault"
+                  id="whatsapp-radio"
+                  value="Whatsapp"
+                  checked
+                />
+                <label class="form-check-label" for="whatsapp-radio">
+                  Whatsapp
+                </label>
+              </div>
+            </fieldset>
+
+            <fieldset class="campo-horarios mb-3">
+              <div class="col-md-6">
+                <legend class="horario-contato">
+                  <h5>Qual horário prefere ser atendido?</h5>
+                </legend>
+                <select class="form-select shadow" name="time_preference">
+                  <option value="Manhã">Manhã</option>
+                  <option value="Tarde">Tarde</option>
+                  <option value="Noite">Noite</option>
+                </select>
+              </div>
+            </fieldset>
+
+            <div class="col-12">
+              <button type="submit" class="button-submit btn btn-primary">
+                Enviar formulário
+              </button>
+            </div>
+          </form>
         </div>
       </section>
 
-      <section class="mapa px-4 my-5">
-        <div class="container text-center">
-          <h2 class="mb-4">Nosso estabelecimento</h2>
-          <p class="lead mb-5">
-            Nosso estabelecimento está localizado no Jardim São José, Ferraz de
-            Vasconcelos.
-          </p>
-          <div class="ratio ratio-16x9 border border-dark shadow">
-            <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1828.6800821226727!2d-46.35541880793838!3d-23.55550475299072!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce7ab1d490db1d%3A0x6fdb44d6226bbab3!2sR.%20Greg%C3%B3rio%20Slechticius%2C%20246%20-%20Jardim%20Sao%20Jose%2C%20Ferraz%20de%20Vasconcelos%20-%20SP%2C%2008504-130!5e0!3m2!1sen!2sbr!4v1632526648407!5m2!1sen!2sbr"
-              allowfullscreen=""
-              loading="lazy"
-            ></iframe>
-          </div>
-        </div>
-      </section>
-
-      <section class="beneficios px-4 my-5">
-        <div class="container text-center">
-          <h2 class="mb-4">Benefícios</h2>
-
-          <ul class="list-group border border-dark shadow">
-            <li class="list-group-item bg-hover-lilac">
-              Atendimento aos clientes
-            </li>
-            <li class="list-group-item bg-hover-lilac">Pontualidade</li>
-            <li class="list-group-item bg-hover-lilac">
-              Qualidade e eficiência
-            </li>
-            <li class="list-group-item bg-hover-lilac">Preço baixo</li>
-          </ul>
+      <section class="tabela-horarios px-4 mb-5">
+        <div class="container col-md-5">
+          <table class="table shadow text-center border border-dark">
+            <thead>
+              <tr class="table-lilac">
+                <th
+                  class="border-end border-dark color-hover-light"
+                  scope="col"
+                >
+                  Dia
+                </th>
+                <th class="color-hover-light" scope="col">Horário</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th class="border-end border-dark" scope="row">Seg à sex</th>
+                <td>9h ~ 18h</td>
+              </tr>
+              <tr>
+                <th class="border-end border-dark" scope="row">Sábados</th>
+                <td>9h ~ 17h</td>
+              </tr>
+            </tbody>
+          </table>
         </div>
       </section>
     </main>
@@ -237,7 +271,11 @@
         <p class="copywrite color-hover-light">&copy; 2019 Noemia Costuras</p>
       </div>
     </footer>
-    <!--Bootstrap-->
-    <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <!--Sweet Alert-->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <!--API EmailJS-->
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <!--My JS-->
+    <script src="assets/js/form.js"></script>
   </body>
 </html>
