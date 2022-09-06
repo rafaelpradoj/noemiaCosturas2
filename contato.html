@@ -1,281 +1,295 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      rel="shortcut icon"
-      href="assets/img/favicon.ico"
-      type="image/x-icon"
-    />
-    <!--Bootstrap-->
-    <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
-    <!--My CSS-->
-    <link rel="stylesheet" href="assets/css/bootstrap-redefined.css" />
-    <title>Contato | Noemia Costuras</title>
-  </head>
-  <body>
-    <header class="bg-lilac border-bottom border-dark">
-      <div class="container">
-        <div
-          class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start"
-        >
-          <a
-            href="index.html"
-            class="d-flex align-items-center my-2 my-lg-0 me-lg-auto text-white text-decoration-none"
-          >
-            <img
-              class="bi me-2"
-              src="assets/img/logo.png"
-              alt="Logo empresa Noemia Costuras"
-            />
-          </a>
+	<head>
+		<!-- Google tag (gtag.js) -->
+		<script
+			async
+			src="https://www.googletagmanager.com/gtag/js?id=G-MGVYJHG1BT"
+		></script>
+		<script>
+			window.dataLayer = window.dataLayer || []
+			function gtag() {
+				dataLayer.push(arguments)
+			}
+			gtag("js", new Date())
 
-          <ul
-            class="nav col-12 col-lg-auto my-2 justify-content-center my-md-0 text-small"
-          >
-            <li>
-              <a href="index.html" class="nav-link text-dark color-hover-light">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="24"
-                  height="24"
-                  fill="currentColor"
-                  class="bi-house-door bi d-block mx-auto mb-1"
-                  viewBox="0 0 16 16"
-                >
-                  <path
-                    d="M8.354 1.146a.5.5 0 0 0-.708 0l-6 6A.5.5 0 0 0 1.5 7.5v7a.5.5 0 0 0 .5.5h4.5a.5.5 0 0 0 .5-.5v-4h2v4a.5.5 0 0 0 .5.5H14a.5.5 0 0 0 .5-.5v-7a.5.5 0 0 0-.146-.354L13 5.793V2.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.293L8.354 1.146zM2.5 14V7.707l5.5-5.5 5.5 5.5V14H10v-4a.5.5 0 0 0-.5-.5h-3a.5.5 0 0 0-.5.5v4H2.5z"
-                  />
-                </svg>
-                Home
-              </a>
-            </li>
-            <li>
-              <a
-                href="servicos.html"
-                class="nav-link text-dark color-hover-light"
-              >
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="24"
-                  height="24"
-                  fill="currentColor"
-                  class="bi-briefcase bi d-block mx-auto mb-1"
-                  viewBox="0 0 16 16"
-                >
-                  <path
-                    d="M6.5 1A1.5 1.5 0 0 0 5 2.5V3H1.5A1.5 1.5 0 0 0 0 4.5v8A1.5 1.5 0 0 0 1.5 14h13a1.5 1.5 0 0 0 1.5-1.5v-8A1.5 1.5 0 0 0 14.5 3H11v-.5A1.5 1.5 0 0 0 9.5 1h-3zm0 1h3a.5.5 0 0 1 .5.5V3H6v-.5a.5.5 0 0 1 .5-.5zm1.886 6.914L15 7.151V12.5a.5.5 0 0 1-.5.5h-13a.5.5 0 0 1-.5-.5V7.15l6.614 1.764a1.5 1.5 0 0 0 .772 0zM1.5 4h13a.5.5 0 0 1 .5.5v1.616L8.129 7.948a.5.5 0 0 1-.258 0L1 6.116V4.5a.5.5 0 0 1 .5-.5z"
-                  />
-                </svg>
-                Servicos
-              </a>
-            </li>
-            <li>
-              <a
-                href="contato.html"
-                class="nav-link text-dark color-hover-light"
-              >
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="24"
-                  height="24"
-                  fill="currentColor"
-                  class="bi-envelope bi d-block mx-auto mb-1"
-                  viewBox="0 0 16 16"
-                >
-                  <path
-                    d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V4Zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1H2Zm13 2.383-4.708 2.825L15 11.105V5.383Zm-.034 6.876-5.64-3.471L8 9.583l-1.326-.795-5.64 3.47A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.741ZM1 11.105l4.708-2.897L1 5.383v5.722Z"
-                  />
-                </svg>
-                Contato
-              </a>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </header>
-    <main class="gradient">
-      <section class="formulario px-4 py-5">
-        <div class="container">
-          <form class="row g-3">
-            <div class="campo-nome mb-3">
-              <label for="nome" class="form-label">
-                <h5>Nome e sobrenome</h5>
-              </label>
-              <input
-                type="text"
-                class="form-control shadow"
-                name="contact_name"
-                autocomplete="off"
-                autofocus
-                required
-              />
-            </div>
+			gtag("config", "G-MGVYJHG1BT")
+		</script>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link
+			rel="shortcut icon"
+			href="assets/img/favicon.ico"
+			type="image/x-icon"
+		/>
+		<!--Bootstrap-->
+		<link rel="stylesheet" href="assets/css/bootstrap.min.css" />
+		<!--My CSS-->
+		<link rel="stylesheet" href="assets/css/bootstrap-redefined.css" />
+		<title>Contato | Noemia Costuras</title>
+	</head>
+	<body>
+		<header class="bg-lilac border-bottom border-dark">
+			<div class="container">
+				<div
+					class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start"
+				>
+					<a
+						href="index.html"
+						class="d-flex align-items-center my-2 my-lg-0 me-lg-auto text-white text-decoration-none"
+					>
+						<img
+							class="bi me-2"
+							src="assets/img/logo.png"
+							alt="Logo empresa Noemia Costuras"
+						/>
+					</a>
 
-            <div class="campo-email col-md-6 mb-3">
-              <label for="email" class="form-label">
-                <h5>Email</h5>
-              </label>
-              <input
-                type="email"
-                class="form-control shadow"
-                name="contact_email"
-                autocomplete="off"
-                placeholder="email@dominio.com"
-                required
-              />
-            </div>
+					<ul
+						class="nav col-12 col-lg-auto my-2 justify-content-center my-md-0 text-small"
+					>
+						<li>
+							<a href="index.html" class="nav-link text-dark color-hover-light">
+								<svg
+									xmlns="http://www.w3.org/2000/svg"
+									width="24"
+									height="24"
+									fill="currentColor"
+									class="bi-house-door bi d-block mx-auto mb-1"
+									viewBox="0 0 16 16"
+								>
+									<path
+										d="M8.354 1.146a.5.5 0 0 0-.708 0l-6 6A.5.5 0 0 0 1.5 7.5v7a.5.5 0 0 0 .5.5h4.5a.5.5 0 0 0 .5-.5v-4h2v4a.5.5 0 0 0 .5.5H14a.5.5 0 0 0 .5-.5v-7a.5.5 0 0 0-.146-.354L13 5.793V2.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.293L8.354 1.146zM2.5 14V7.707l5.5-5.5 5.5 5.5V14H10v-4a.5.5 0 0 0-.5-.5h-3a.5.5 0 0 0-.5.5v4H2.5z"
+									/>
+								</svg>
+								Home
+							</a>
+						</li>
+						<li>
+							<a
+								href="servicos.html"
+								class="nav-link text-dark color-hover-light"
+							>
+								<svg
+									xmlns="http://www.w3.org/2000/svg"
+									width="24"
+									height="24"
+									fill="currentColor"
+									class="bi-briefcase bi d-block mx-auto mb-1"
+									viewBox="0 0 16 16"
+								>
+									<path
+										d="M6.5 1A1.5 1.5 0 0 0 5 2.5V3H1.5A1.5 1.5 0 0 0 0 4.5v8A1.5 1.5 0 0 0 1.5 14h13a1.5 1.5 0 0 0 1.5-1.5v-8A1.5 1.5 0 0 0 14.5 3H11v-.5A1.5 1.5 0 0 0 9.5 1h-3zm0 1h3a.5.5 0 0 1 .5.5V3H6v-.5a.5.5 0 0 1 .5-.5zm1.886 6.914L15 7.151V12.5a.5.5 0 0 1-.5.5h-13a.5.5 0 0 1-.5-.5V7.15l6.614 1.764a1.5 1.5 0 0 0 .772 0zM1.5 4h13a.5.5 0 0 1 .5.5v1.616L8.129 7.948a.5.5 0 0 1-.258 0L1 6.116V4.5a.5.5 0 0 1 .5-.5z"
+									/>
+								</svg>
+								Servicos
+							</a>
+						</li>
+						<li>
+							<a
+								href="contato.html"
+								class="nav-link text-dark color-hover-light"
+							>
+								<svg
+									xmlns="http://www.w3.org/2000/svg"
+									width="24"
+									height="24"
+									fill="currentColor"
+									class="bi-envelope bi d-block mx-auto mb-1"
+									viewBox="0 0 16 16"
+								>
+									<path
+										d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V4Zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1H2Zm13 2.383-4.708 2.825L15 11.105V5.383Zm-.034 6.876-5.64-3.471L8 9.583l-1.326-.795-5.64 3.47A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.741ZM1 11.105l4.708-2.897L1 5.383v5.722Z"
+									/>
+								</svg>
+								Contato
+							</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</header>
+		<main class="gradient">
+			<section class="formulario px-4 py-5">
+				<div class="container">
+					<form class="row g-3">
+						<div class="campo-nome mb-3">
+							<label for="nome" class="form-label">
+								<h5>Nome e sobrenome</h5>
+							</label>
+							<input
+								type="text"
+								class="form-control shadow"
+								name="contact_name"
+								autocomplete="off"
+								autofocus
+								required
+							/>
+						</div>
 
-            <div class="campo-telefone col-md-6 mb-3">
-              <label for="telefone" class="form-label" type="tel">
-                <h5>Telefone com DDD</h5>
-              </label>
-              <input
-                type="text"
-                class="form-control shadow"
-                id="phone-input"
-                name="contact_phone"
-                maxlength="15"
-                autocomplete="off"
-                required
-              />
-            </div>
+						<div class="campo-email col-md-6 mb-3">
+							<label for="email" class="form-label">
+								<h5>Email</h5>
+							</label>
+							<input
+								type="email"
+								class="form-control shadow"
+								name="contact_email"
+								autocomplete="off"
+								placeholder="email@dominio.com"
+								required
+							/>
+						</div>
 
-            <div class="campo-mensagem mb-3">
-              <label for="mensagem" class="form-label">
-                <h5>Mensagem</h5>
-              </label>
-              <textarea
-                class="form-control shadow"
-                name="contact_message"
-                rows="5"
-                maxlength="430"
-                required
-              ></textarea>
-            </div>
+						<div class="campo-telefone col-md-6 mb-3">
+							<label for="telefone" class="form-label" type="tel">
+								<h5>Telefone com DDD</h5>
+							</label>
+							<input
+								type="text"
+								class="form-control shadow"
+								id="phone-input"
+								name="contact_phone"
+								maxlength="15"
+								autocomplete="off"
+								required
+							/>
+						</div>
 
-            <fieldset class="campo-forma-contato mb-3">
-              <legend class="contato">
-                <h5>Como prefere o nosso contato?</h5>
-              </legend>
-              <div class="form-check mb-2">
-                <input
-                  type="radio"
-                  class="form-check-input"
-                  name="flexRadioDefault"
-                  id="telefone-radio"
-                  value="Telefone"
-                />
-                <label class="form-check-label" for="telefone-radio">
-                  Telefone
-                </label>
-              </div>
+						<div class="campo-mensagem mb-3">
+							<label for="mensagem" class="form-label">
+								<h5>Mensagem</h5>
+							</label>
+							<textarea
+								class="form-control shadow"
+								name="contact_message"
+								rows="5"
+								maxlength="430"
+								required
+							></textarea>
+						</div>
 
-              <div class="form-check">
-                <input
-                  type="radio"
-                  class="form-check-input"
-                  name="flexRadioDefault"
-                  id="whatsapp-radio"
-                  value="Whatsapp"
-                  checked
-                />
-                <label class="form-check-label" for="whatsapp-radio">
-                  Whatsapp
-                </label>
-              </div>
-            </fieldset>
+						<fieldset class="campo-forma-contato mb-3">
+							<legend class="contato">
+								<h5>Como prefere o nosso contato?</h5>
+							</legend>
+							<div class="form-check mb-2">
+								<input
+									type="radio"
+									class="form-check-input"
+									name="flexRadioDefault"
+									id="telefone-radio"
+									value="Telefone"
+								/>
+								<label class="form-check-label" for="telefone-radio">
+									Telefone
+								</label>
+							</div>
 
-            <fieldset class="campo-horarios mb-3">
-              <div class="col-md-6">
-                <legend class="horario-contato">
-                  <h5>Qual horário prefere ser atendido?</h5>
-                </legend>
-                <select class="form-select shadow" name="time_preference">
-                  <option value="Manhã">Manhã</option>
-                  <option value="Tarde">Tarde</option>
-                  <option value="Noite">Noite</option>
-                </select>
-              </div>
-            </fieldset>
+							<div class="form-check">
+								<input
+									type="radio"
+									class="form-check-input"
+									name="flexRadioDefault"
+									id="whatsapp-radio"
+									value="Whatsapp"
+									checked
+								/>
+								<label class="form-check-label" for="whatsapp-radio">
+									Whatsapp
+								</label>
+							</div>
+						</fieldset>
 
-            <div class="col-12">
-              <button type="submit" class="button-submit btn btn-primary">
-                Enviar formulário
-              </button>
-            </div>
-          </form>
-        </div>
-      </section>
+						<fieldset class="campo-horarios mb-3">
+							<div class="col-md-6">
+								<legend class="horario-contato">
+									<h5>Qual horário prefere ser atendido?</h5>
+								</legend>
+								<select class="form-select shadow" name="time_preference">
+									<option value="Manhã">Manhã</option>
+									<option value="Tarde">Tarde</option>
+									<option value="Noite">Noite</option>
+								</select>
+							</div>
+						</fieldset>
 
-      <section class="tabela-horarios px-4 mb-5">
-        <div class="container col-md-5">
-          <table class="table shadow text-center border border-dark">
-            <thead>
-              <tr class="table-lilac">
-                <th
-                  class="border-end border-dark color-hover-light"
-                  scope="col"
-                >
-                  Dia
-                </th>
-                <th class="color-hover-light" scope="col">Horário</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <th class="border-end border-dark" scope="row">Seg à sex</th>
-                <td>9h ~ 18h</td>
-              </tr>
-              <tr>
-                <th class="border-end border-dark" scope="row">Sábados</th>
-                <td>9h ~ 17h</td>
-              </tr>
-            </tbody>
-          </table>
-        </div>
-      </section>
-    </main>
-    <footer class="py-3 bg-lilac border-top border-dark">
-      <div class="container">
-        <ul
-          class="nav justify-content-center border-bottom border-dark pb-3 mb-3"
-        >
-          <li class="nav-item">
-            <a
-              href="index.html"
-              class="nav-link px-2 text-dark color-hover-light"
-              >Home</a
-            >
-          </li>
-          <li class="nav-item">
-            <a
-              href="servicos.html"
-              class="nav-link px-2 text-dark color-hover-light"
-              >Servicos</a
-            >
-          </li>
-          <li class="nav-item">
-            <a
-              href="contato.html"
-              class="nav-link px-2 text-dark color-hover-light"
-              >Contato</a
-            >
-          </li>
-        </ul>
-        <p class="float-end">
-          <a href="#" class="text-dark color-hover-light">Voltar ao topo</a>
-        </p>
-        <p class="copywrite color-hover-light">&copy; 2019 Noemia Costuras</p>
-      </div>
-    </footer>
-    <!--Sweet Alert-->
-    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
-    <!--API EmailJS-->
-    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
-    <!--My JS-->
-    <script src="assets/js/form.js"></script>
-  </body>
+						<div class="col-12">
+							<button type="submit" class="button-submit btn btn-primary">
+								Enviar formulário
+							</button>
+						</div>
+					</form>
+				</div>
+			</section>
+
+			<section class="tabela-horarios px-4 mb-5">
+				<div class="container col-md-5">
+					<table class="table shadow text-center border border-dark">
+						<thead>
+							<tr class="table-lilac">
+								<th
+									class="border-end border-dark color-hover-light"
+									scope="col"
+								>
+									Dia
+								</th>
+								<th class="color-hover-light" scope="col">Horário</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<th class="border-end border-dark" scope="row">Seg à sex</th>
+								<td>9h ~ 18h</td>
+							</tr>
+							<tr>
+								<th class="border-end border-dark" scope="row">Sábados</th>
+								<td>9h ~ 17h</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+			</section>
+		</main>
+		<footer class="py-3 bg-lilac border-top border-dark">
+			<div class="container">
+				<ul
+					class="nav justify-content-center border-bottom border-dark pb-3 mb-3"
+				>
+					<li class="nav-item">
+						<a
+							href="index.html"
+							class="nav-link px-2 text-dark color-hover-light"
+							>Home</a
+						>
+					</li>
+					<li class="nav-item">
+						<a
+							href="servicos.html"
+							class="nav-link px-2 text-dark color-hover-light"
+							>Servicos</a
+						>
+					</li>
+					<li class="nav-item">
+						<a
+							href="contato.html"
+							class="nav-link px-2 text-dark color-hover-light"
+							>Contato</a
+						>
+					</li>
+				</ul>
+				<p class="float-end">
+					<a href="#" class="text-dark color-hover-light">Voltar ao topo</a>
+				</p>
+				<p class="copywrite color-hover-light">&copy; 2019 Noemia Costuras</p>
+			</div>
+		</footer>
+		<!--Sweet Alert-->
+		<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+		<!--API EmailJS-->
+		<script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+		<!--My JS-->
+		<script src="assets/js/form.js"></script>
+	</body>
 </html>
