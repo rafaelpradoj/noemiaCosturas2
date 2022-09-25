@@ -1,12 +1,12 @@
-const form = document.querySelector("form");
-const button = document.querySelector(".button-submit");
-const phoneInput = document.querySelector("#phone-input");
+const form = document.querySelector('form')
+const button = document.querySelector('.button-submit')
+const phoneInput = document.querySelector('.campo-telefone input')
 
 const disableButton = () => {
-  button.setAttribute("disabled", true)
+  button.setAttribute('disabled', true)
 
   setTimeout(() => {
-    button.removeAttribute("disabled")
+    button.removeAttribute('disabled')
   }, 60000)
 }
 const submitSuccessMessage = () => {
@@ -14,7 +14,7 @@ const submitSuccessMessage = () => {
     icon: "success",
     title: "Tudo ok!",
     text: "Dados enviados com sucesso!"
-  })  
+  })
 }
 const submitErrorMessage = () => {
   Swal.fire({
@@ -27,19 +27,19 @@ const emailJSInit = () => {
   emailjs.init('user_IFgyDb7wGDHBg6AFzO23k')
 }
 const sendFormToEmail = () => {
-  emailjs.sendForm('service_hm6yc5r', 'template_bfz83kz', form)
+  emailjs
+    .sendForm('service_hm6yc5r', 'template_bfz83kz', form)
     .then(submitSuccessMessage, submitErrorMessage)
 }
-
 const createPhoneMask = () => {
-  let phone = phoneInput.value.replace(/\D/g, "")
+  let phone = phoneInput.value.replace(/\D/g, '')
 
   const phoneFieldLength = phone.length
-  const fieldLengthBiggerThan10 = phone.replace(/^(\d\d)(\d{5})(\d{4}).*/,"($1) $2-$3")
-  const fieldLengthBiggerThan5 = phone.replace(/^(\d\d)(\d{4})(\d{0,4}).*/,"($1) $2-$3")
-  const fieldLengthBiggerThan2 = phone.replace(/^(\d\d)(\d{0,5})/, "($1) $2")
+  const fieldLengthBiggerThan10 = phone.replace(/^(\d\d)(\d{5})(\d{4}).*/, '($1) $2-$3')
+  const fieldLengthBiggerThan5 = phone.replace(/^(\d\d)(\d{4})(\d{0,4}).*/, '($1) $2-$3')
+  const fieldLengthBiggerThan2 = phone.replace(/^(\d\d)(\d{0,5})/, '($1) $2')
 
-  phone = phone.replace(/^0/, "")
+  phone = phone.replace(/^0/, '')
 
   if (phoneFieldLength > 10) {
     phone = fieldLengthBiggerThan10
@@ -53,11 +53,14 @@ const createPhoneMask = () => {
 }
 const validateForm = event => {
   event.preventDefault()
+
   disableButton()
   sendFormToEmail()
+
+  event.target.reset()
 }
 
 emailJSInit()
 
-phoneInput.addEventListener("input", createPhoneMask)
+phoneInput.addEventListener('input', createPhoneMask)
 form.addEventListener('submit', validateForm)

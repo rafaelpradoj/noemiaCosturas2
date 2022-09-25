@@ -21,7 +21,7 @@
 
 /*Normal elements servicos page*/
 .servicos h2 {
-  cursor: default;
+	cursor: default;
 }
 
 /*For Bootstrap Creations*/
@@ -51,8 +51,4 @@
 
 .gradient {
 	background: var(--degrade);
-}
-
-.table-lilac {
-	background-color: var(--lilac);
 }
